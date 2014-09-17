@@ -1,0 +1,156 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Ascorbate standard curve &mdash; IO Rodeo Documentation for CheapStat</title>
+    
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="top" title="IO Rodeo Documentation for CheapStat" href="index.html" /> 
+  </head>
+  <body>
+      <div class="header"><img class="rightlogo" src="_static/logo.png" alt="Logo"/><h1 class="heading"><a href="index.html">
+          <span>IO Rodeo Documentation for CheapStat</span></a></h1>
+        <h2 class="heading"><span>Ascorbate standard curve</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="ascorbate-standard-curve">
+<h1>Ascorbate standard curve<a class="headerlink" href="#ascorbate-standard-curve" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="reagents-equipment">
+<h2>Reagents &amp; Equipment<a class="headerlink" href="#reagents-equipment" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>CheapStat</li>
+<li>Ag/AgCl reference electrode</li>
+<li>Pencil lead for counter and working electrodes</li>
+<li>0.1M KCl solution in distilled or deionized water <a class="footnote-reference" href="#f1" id="id1">[1]</a></li>
+<li>Ascorbate</li>
+<li>100mL volumetric flasks</li>
+<li>Electrochemisty cell - 100 mL glass beaker with electrode mount</li>
+<li>Micropipettes</li>
+</ul>
+</div>
+<div class="section" id="cyclic-voltammetry-parameters">
+<h2>Cyclic voltammetry parameters<a class="headerlink" href="#cyclic-voltammetry-parameters" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>Start: 200 mV</strong></li>
+<li><strong>Stop: 900 mV</strong></li>
+<li><strong>Slope: 50 mV/sec</strong></li>
+<li><strong>Sample rate: 5 mV/sample</strong></li>
+<li><strong>Cycles: 1</strong></li>
+</ul>
+</div>
+<div class="section" id="method">
+<h2>Method<a class="headerlink" href="#method" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Prepare a fresh stock of 10mM ascorbate in 0.1M KCl. <a class="footnote-reference" href="#f2" id="id2">[2]</a></li>
+<li>Using 100 mL volumetric flasks, prepare the following standard solutions of ascorbate</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="52%" />
+<col width="48%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Ascorbate concentration (mM)</th>
+<th class="head">Volume of 10mM stock (mL)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0.1</td>
+<td>1.0</td>
+</tr>
+<tr class="row-odd"><td>0.2</td>
+<td>2.0</td>
+</tr>
+<tr class="row-even"><td>0.3</td>
+<td>3.0</td>
+</tr>
+<tr class="row-odd"><td>0.4</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>Transfer 80 mL of 0.1M KCl into the electrochemistry cell</li>
+<li>Place the electrodes into the solution</li>
+<li>Run the CV measurement using the parameters above</li>
+<li>Save data. This is a background measurement and is used to subtract from a data measurement.</li>
+<li>Pour 50 mL of 0.1mM ascorbate into the beaker and repeat measurement. Save data.</li>
+<li>Repeat for all ascorbate concentrations.</li>
+</ul>
+</div>
+<div class="section" id="sample-data">
+<h2>Sample data<a class="headerlink" href="#sample-data" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="_images/ascorbate_standards.png" src="_images/ascorbate_standards.png" />
+</div>
+</div>
+<div class="section" id="data-analysis">
+<h2>Data Analysis<a class="headerlink" href="#data-analysis" title="Permalink to this headline">¶</a></h2>
+<p>Subtract the background values from the data. Determine the current at 600mV for all samples. Plot a graph of ascorbate concentration (x-axis) versus measured current.
+Note. we have a python script available for subtracting the background, analyzing and plotting the data.</p>
+<div class="figure align-center">
+<img alt="_images/ascorbate_linear_plot.png" src="_images/ascorbate_linear_plot.png" />
+</div>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>To prepare 500 mL of a 0.1M KCl solution: transfer 33 mL of 3M KCl stock (LabChem Part # LC18795-1) into a 500 mL volumetric flask. Fill to line with distilled or deionized water. Place stopper in flask and invert several times to mix.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>Example: 0.176g ascorbate in 100mL of 0.1M KCl = 10mM stock</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2014, IO Rodeo.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
