@@ -4,26 +4,26 @@
 
 Connecting electrodes to the CheapStat device
 =====================================================
+Each CheapStat unit ships with an electrode adapter. This is a small PCB with a set of 3 colored wires with alligator clips for connecting to your electrodes. Insert the 3-pin connector into the side of the CheapStat as shown in the image below. Note the orientation. The leads should be hanging down off the side. 
 
-Each CheapStat unit ships with a set of 3 colored wires with alligator clips for connecting to your electrodes. 
 
-*  Green alligator clip - Working electrode 
+.. figure:: _static/pcb_connector_4.png
+   :align:  center
+
+Next, attach the clips to the reference, working and counter electrodes as follows:
+
+*  Green alligator clip -- Working electrode 
 *  Yellow alligator clip -- Reference electrode
 *  Red alligator clip -- Counter electrode
 
-Insert the 3-pin connector into the side of the CheapStat as shown in the image below. Note that there is a sticker on the connector end to help with orientation. The sticker should be facing up. 
 
-.. figure:: _static/wire_connector_3.png
-   :align:  center
-
-Next, attach the clips to the reference, working and counter electrodes. For example, in the images shown below, a Ag/AgCl reference electrode [#f1]_ was used along with carbon lead pencil for the counter and working electrodes. 
+In the experimental set-up shown below, a Ag/AgCl reference electrode [#f1]_ was used along with carbon lead pencil for the counter and working electrodes. 
 
 
 .. figure:: _static/ecell_3.JPG
    :align:  center
 
-   
-   
+  
    
    
 Adapters for screen printed electrodes
